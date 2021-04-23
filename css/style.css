@@ -1,0 +1,100 @@
+/*===============================
+
+  Universal Styling
+
+*===============================*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+/*===============================
+
+  Header Styling
+
+*===============================*/
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: #1c344c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header{
+  text-align: center;
+  background: #398298;
+  padding: 20px 0;
+}
+
+/*===============================
+
+  Body Styling
+
+*===============================*/
+
+body {
+  background: #5f686f38;
+}
+
+h1{
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #1c344c;
+}
+
+.contact-form {
+  background: #398298;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 5px;
+    color: #1c344c;
+    font-family: sans-serif;
+    margin: 20px auto;
+}
+
+.input-selection{
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.submit input {
+  background: #1c344c;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+/*===============================
+
+  Footer Styling
+
+*===============================*/
+footer{
+  background: #398298;
+  color: #1c344c;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+}
