@@ -1,19 +1,19 @@
-/*===============================
+/*===================================================
 
   Universal Styling
 
-*===============================*/
+*===================================================*/
 *{
   margin: 0;
   padding: 0;
   border: 0;
   font-family: 'Nunito Sans', sans-serif;
 }
-/*===============================
+/*==========================
 
   Header Styling
 
-*===============================*/
+*==========================*/
 nav ul li {
   display: inline;
 }
@@ -29,14 +29,23 @@ nav a {
 header{
   text-align: center;
   background: #398298;
-  padding: 20px 0;
+  padding: 25px 0;
+  margin-top: 10px;
+  position:fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
 }
 
-/*===============================
+.logo-image{
+  position: absolute;
+  margin: -80px 20px;
+}
+/*============================================================
 
-  Body Styling
+  Registration Styling
 
-*===============================*/
+*==============================================================*/
 
 body {
   background: #5f686f38;
