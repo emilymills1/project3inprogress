@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Mosaic at WDW's 10 Year Anniversary</title>
   </head>
-  
+
   <body>
     <header>
       <nav>
@@ -16,5 +16,86 @@
         </ul>
       </nav>
     </header>
+
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main>
+    <div class="container">
+      <h1> Register for the event! </h1>
+        <p> We hope you are able to join us for the anniversary celebration! Please register here to let us know whether or not you are able to attend. Whether or not you are able to attend, we would still love to connect with you. Please sign up to be added to our email list! </p>
+        <form class="contact-form" id="test_form" name="Registration" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+        <div class="first-name input-selection">
+          <label for="firstname" class="label_input_wrap">First Name:</label>
+          <input type="text" name="req_firstname" id="firstname" placeholder="Mickey" />
+        </div>
+
+        <div class="last-name input-selection">
+          <label for="lastname" class="label_input_wrap">Last Name:</label>
+          <input type="text" name="req_lastname" id="lastname" placeholder="Mouse"/>
+        </div>
+
+        <div class="email input-selection">
+          <label for="email" class="label_input_wrap">Email:</label>
+          <input type="email" name="req_email" id="email"
+          placeholder= mickeymouse@disney.com />
+        </div>
+
+        <div class="telephone input-selection">
+          <label for="telephone" class="label_input_wrap">Telephone:</label>
+          <input type="tel" name="req_telephone" id="telephone"
+          placeholder= 407-939-2278 />
+        </div>
+
+        <div class="comments input-selection">
+          <label for="comments" class="label_input_wrap">Comments:</label>
+          <textarea name="comments" id="comments" cols="50" rows="5"
+          placeholder= "Your comments go here!" ></textarea>
+        </div>
+
+        <div class="checkbox input-selection">
+          <h3> Can you attend? </h3>
+          <input type="checkbox" name="attending" value="yes" id="yes"/><label for="yes">yes</label>
+          <input type="checkbox" name="attending" value="no" id="no"/><label for="no">no</label>
+          <input type="checkbox" name="attending" value="maybe" id="maybe"/><label for="maybe">maybe</label>
+        </div>
+
+        <div class="checkbox input-selection">
+          <h3> Would you like to be added to our email list? </h3>
+          <input type="checkbox" name="email_list" value="yes" id="yes"/><label for="yes">yes</label>
+          <input type="checkbox" name="email_list" value="no" id="no"/><label for="no">no</label>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Submit"/>
+        </div>
+      </form>
+    </div>
+  </main>
+
+    <footer>
+      <p>Mosaic at WDW 10 Year Anniversary Celebration</p>
+    </footer>
+
   </body>
 </html>
