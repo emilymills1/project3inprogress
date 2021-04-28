@@ -7,9 +7,21 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'GothamBook', sans-serif;
 }
-/*==========================
+@font-face {
+  font-family: "GothamBold";
+  src: url('../font/GothamBold.ttf') format('truetype')
+}
+@font-face {
+  font-family: "GothamBook";
+  src: url('../font/GothamBook.ttf') format('truetype')
+}
+@font-face {
+  font-family: "Capetown";
+  src: url('../font/Capetown.otf') format('opentype')
+}
+/*========================
 
   Header Styling
 
@@ -20,32 +32,89 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: white;
-  background: #1c344c;
+  font-family: GothamBold;
+  line-height: 24px;
+  color: #F3C766;
   padding: 5px;
   border-radius: 5px;
+  border-top: 10px gray;
+
 }
 
 header{
   text-align: center;
   background: #398298;
   padding: 25px 0;
-  margin-top: 10px;
   position:fixed;
   text-align: center;
+  margin: 0 0 0 0;
   width: 100%;
   z-index: 999;
+  border-style: solid;
+  border-width: 50px 0 0 0;
+  border-color: gray;
 }
 
 .logo-image{
   position: absolute;
   margin: -80px 20px;
 }
+
+/*===============================
+
+  Footer Styling
+
+*===============================*/
+footer{
+  background: #398298;
+  color: #1c344c;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+}
+/*============================================================
+
+  Index Styling
+
+*=========================================================*/
+main {
+  padding-top: 200px;
+}
+.bottom_text{
+  display: inline-block;
+  width: 275px;
+  background: white;
+  padding: 15px;
+  margin: 20px;
+}
+
+h2{
+  text-align: center;
+  font-family: GothamBold;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 30 0 5 0;
+  color: #1C344C;
+}
+
+h3{
+  text-align: center;
+  font-family: Capetown;
+  font-size: 26px;
+  line-height: 24px;
+  padding: 0 0 20px 30px;
+  color: #F27360;
+}
+
+p{
+  font-size: 12px;
+  line-height: 14px;
+}
 /*============================================================
 
   Registration Styling
 
-*==============================================================*/
+*=========================================================*/
 
 body {
   background: #5f686f38;
@@ -94,16 +163,4 @@ input, textarea {
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
-}
-/*===============================
-
-  Footer Styling
-
-*===============================*/
-footer{
-  background: #398298;
-  color: #1c344c;
-  text-align: center;
-  font-weight: bold;
-  padding: 20px 0;
 }
