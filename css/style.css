@@ -9,14 +9,17 @@
   border: 0;
   font-family: 'GothamBook', sans-serif;
 }
+
 @font-face {
   font-family: "GothamBold";
   src: url('../font/GothamBold.ttf') format('truetype')
 }
+
 @font-face {
   font-family: "GothamBook";
   src: url('../font/GothamBook.ttf') format('truetype')
 }
+
 @font-face {
   font-family: "Capetown";
   src: url('../font/Capetown.otf') format('opentype')
@@ -38,7 +41,6 @@ nav a {
   padding: 5px;
   border-radius: 5px;
   border-top: 10px gray;
-
 }
 
 header{
@@ -46,7 +48,6 @@ header{
   background: #398298;
   padding: 25px 0;
   position:fixed;
-  text-align: center;
   margin: 0 0 0 0;
   width: 100%;
   z-index: 999;
@@ -86,8 +87,9 @@ footer{
 
 *=========================================================*/
 main {
-  padding-top: 250px;
-  margin: auto;
+  padding-top: 200px;
+  margin: auto 0;
+  max-width: 900px;
 }
 /*===============================
 
@@ -96,20 +98,23 @@ main {
 *===============================*/
 .top_main{
   position: relative;
+  max-width: 900px;
+  margin: auto 0;
 }
+
 .index_hero{
   display:block;
   margin: auto;
 }
+
 .index_copy{
   font-size: 12px;
   line-height: 14px;
   margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;
   background: white;
-  max-width: 900px;
+  width: 700px;
+  margin: 50px 75px;
   position: absolute;
   display: block;
 }
@@ -121,32 +126,22 @@ main {
 *===============================*/
 .bottom_main{
   position: relative;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.bottom_images{
-  position:relative;
-  padding-top: 40px;
-  max-width: 90%;
-  margin: auto;
-}
-.bottom_image{
-  padding: 25px;
-  margin:auto;
-  max-width: 80%;
+  margin-top: 200px;
+  margin-left: 75px;
+  max-width: 81%;
+  text-align: center;
 }
 
 .bottom_texts{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 900px;
+  margin: auto 0;
   position: relative;
 }
+
 .bottom_text{
-  display: inline-block;
-  width: 275px;
+  display:inline-block;
+  width:18%;
   background: white;
   padding: 15px;
   margin: 20px;
@@ -174,35 +169,79 @@ p{
   font-size: 12px;
   line-height: 14px;
 }
+
+.bottom_images{
+  position:relative;
+  padding-top: 40px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.bottom_image{
+  padding: 0 25px;
+  max-width: 21%;
+  width: 100%;
+}
 /*============================================================
 
   About Styling
 
 *=========================================================*/
+.about_main{
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .about_toptext{
   display: inline-block;
   width: 275px;
   background: white;
-  padding: 15px;
-  margin: 20px;
+  padding: 20px 20px 20px 100px;
+  position: absolute;
+  margin: 60px 0 30px -100px;
 }
 
 .about_middletext{
   display: inline-block;
   width: 275px;
   background: white;
-  padding: 15px;
-  margin: 20px;
+  padding: 20px 100px 20px 20px;
+  position: absolute;
+  margin: 60px -100px 30px 0;
+  text-align: right;
 }
 
-  .about_bottomtext{
-    display: inline-block;
-    width: 275px;
-    background: white;
-    padding: 15px;
-    margin: 20px;
+.about_bottomtext{
+  display: inline-block;
+  width: 275px;
+  background: white;
+  padding: 20px 20px 20px 100px;
+  position: absolute;
+  margin: 60px 0 30px -100px;
   }
+
+.about_image {
+position:relative;
+  padding-top: 40px;
+  max-width: 40%;
+  margin: auto;
+  padding: 0 25px;
+  width: 100%;
+  z-index: 50;
+  margin-bottom: 30px;
+}
+
+.about_middleimage{
+  padding-top: 40px;
+  max-width: 40%;
+  margin: auto;
+  padding: 0 25px;
+  width: 100%;
+  z-index: 500;
+  position:relative;
+  margin-left: 300px;
+}
+
 /*============================================================
 
   History Styling
