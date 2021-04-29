@@ -135,6 +135,7 @@ main {
 .bottom_image{
   padding: 25px;
   margin:auto;
+  max-width: 80%;
 }
 
 .bottom_texts{
