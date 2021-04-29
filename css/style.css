@@ -208,7 +208,13 @@ p{
   History Styling
 
 *=========================================================*/
-
+.history_text{
+  display: inline-block;
+  width: 275px;
+  background: white;
+  padding: 15px;
+  margin: 20px;
+}
 
 /*============================================================
 
