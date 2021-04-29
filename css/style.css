@@ -52,12 +52,20 @@ header{
   z-index: 999;
   border-style: solid;
   border-width: 50px 0 0 0;
-  border-color: gray;
+  border-color: #A4B2BC;
 }
 
 .logo-image{
   position: absolute;
   margin: -80px 20px;
+}
+/*===============================
+
+  Body Styling
+
+*===============================*/
+body {
+  background:#A4B2BC;
 }
 
 /*===============================
@@ -78,7 +86,62 @@ footer{
 
 *=========================================================*/
 main {
-  padding-top: 200px;
+  padding-top: 250px;
+  margin: auto;
+}
+/*===============================
+
+  Hero Styling
+
+*===============================*/
+.top_main{
+  position: relative;
+}
+.index_hero{
+  display:block;
+  margin: auto;
+}
+.index_copy{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: white;
+  max-width: 900px;
+  position: absolute;
+  display: block;
+}
+
+/*===============================
+
+  Bottom Styling
+
+*===============================*/
+.bottom_main{
+  position: relative;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom_images{
+  position:relative;
+  padding-top: 40px;
+  max-width: 90%;
+  margin: auto;
+}
+.bottom_image{
+  padding: 25px;
+  margin:auto;
+}
+
+.bottom_texts{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 .bottom_text{
   display: inline-block;
@@ -112,13 +175,23 @@ p{
 }
 /*============================================================
 
-  Registration Styling
+  About Styling
 
 *=========================================================*/
 
-body {
-  background: #5f686f38;
-}
+
+/*============================================================
+
+  History Styling
+
+*=========================================================*/
+
+
+/*============================================================
+
+  Registration Styling
+
+*=========================================================*/
 
 h1{
   text-align: center;
