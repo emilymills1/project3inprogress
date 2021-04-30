@@ -1,7 +1,6 @@
   <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FVJ1E3ESD"></script>
     <script>
@@ -19,6 +18,9 @@
     <meta charset="utf-8"/>
     <meta name="keywords" content="church Cast Members anniversary celebration"/>
     <meta name="description" contect="Join us as we celebrate 10 years of Mosaic at WDW!"/>
+
+    <!-- favicon tags -->
+    <link rel="icon" type="image/ico" href="image/mosaicfavicon.ico"/>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -46,16 +48,19 @@
         </ul>
       </nav>
       <div class="logo-image">
-        <img src="image/10YALogoW72.jpg" alt="Mosaic at WDW Logo">
+        <img src="image/10YALogoW72.jpg" alt="Mosaic at WDW Logo" title="Mosaic at WDW Logo" width=100%/>
       </div>
     </header>
 
   <main>
-    <div class="container">
-      <h1> Register for the event! </h1>
+    <div class="registration_container">
+      <h1> REGISTER </h1>
         <p> We hope you are able to join us for the anniversary celebration! Please register here to let us know whether or not you are able to attend. Whether or not you are able to attend, we would still love to connect with you. Please sign up to be added to our email list! </p>
+
         <form class="contact-form" id="test_form" name="Registration" method="POST" action="form.php" onsubmit="return validateForm(this)">
 
+        <h2> REGISTER FOR THE EVENT </h1>
+        <h3> We hope you can join! </h3>
         <div class="first-name input-selection">
           <label for="firstname" class="label_input_wrap">First Name:</label>
           <input type="text" name="req_firstname" id="firstname" placeholder="Mickey" />
@@ -85,16 +90,16 @@
         </div>
 
         <div class="checkbox input-selection">
-          <h3> Can you attend? </h3>
-          <input type="checkbox" name="attending" value="yes" id="yes"/><label for="yes">yes</label>
-          <input type="checkbox" name="attending" value="no" id="no"/><label for="no">no</label>
-          <input type="checkbox" name="attending" value="maybe" id="maybe"/><label for="maybe">maybe</label>
+          <h4 class="registration_question">Can you attend?</h4>
+          <input type="checkbox" name="attending" value="yes" id="attend_yes"/><label for="yes">yes</label>
+          <input type="checkbox" name="attending" value="no" id="attend_no"/><label for="no">no</label>
+          <input type="checkbox" name="attending" value="maybe" id="attend_maybe"/><label for="maybe">maybe</label>
         </div>
 
         <div class="checkbox input-selection">
-          <h3> Would you like to be added to our email list? </h3>
-          <input type="checkbox" name="email_list" value="yes" id="yes"/><label for="yes">yes</label>
-          <input type="checkbox" name="email_list" value="no" id="no"/><label for="no">no</label>
+          <h4 class="registration_question"> Would you like to be added to our email list? </h4>
+          <input type="checkbox" name="email_list" value="yes" id="email_yes"/><label for="yes">yes</label>
+          <input type="checkbox" name="email_list" value="no" id="email_no"/><label for="no">no</label>
         </div>
 
         <div class="submit">
@@ -104,9 +109,11 @@
     </div>
   </main>
 
-    <footer>
-      <p>Mosaic at WDW 10 Year Anniversary Celebration</p>
-    </footer>
+  <footer>
+    <p>Mosaic at WDW 10 Year Anniversary Celebration</p>
+    <div class="moving"></div>
+      <img class="moving_logo" src="image/mosaiclogomove.png" alt="Mosaic Logo" title="Mosaic Logo" width=30px/>
+  </footer>
 
   </body>
 </html>

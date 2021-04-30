@@ -66,10 +66,57 @@ header{
   Body Styling
 
 *===============================*/
+h1{
+  text-align: center;
+  font-family: GothamBold, sans-serif;
+  font-size: 52px;
+  margin: 30px;
+  color: #1C344C;
+}
+
+h2{
+  text-align: center;
+  font-family: GothamBold, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 30 0 5 0;
+  color: #1C344C;
+}
+
+h3{
+  text-align: center;
+  font-family: Capetown, serif;
+  font-size: 26px;
+  line-height: 24px;
+  padding: 0 0 20px 30px;
+  color: #F27360;
+  text-shadow: 1px 1px #1c344c6b;
+}
+
+h4 {
+  font-family: GothamBold, sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+h5 {
+  font-family: GothamBook,sans-serif;
+  padding-left: 10px;
+}
+p{
+  font-size: 12px;
+  line-height: 14px;
+  font-family: GothamBook, sans-serif;
+}
+
+
 body {
   background:#A4B2BC;
 }
 
+figcaption{
+  color: #1C344C;
+}
 /*===============================
 
   Footer Styling
@@ -81,6 +128,21 @@ footer{
   text-align: center;
   font-weight: bold;
   padding: 20px 0;
+}
+
+.moving_logo{
+  position: absolute;
+  left: 0;
+  animation: moving 10s forwards infinite linear;
+}
+
+@keyframes moving {
+  from{
+    transform: translatex(-20px);
+  }
+  to{
+    transform: translate(1000px)
+  }
 }
 /*============================================================
 
@@ -137,6 +199,7 @@ main {
   display: block;
   max-width: 900px;
   margin: auto 0;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -146,30 +209,7 @@ main {
   background: white;
   padding: 15px;
   margin: 20px;
-}
-
-h2{
-  text-align: center;
-  font-family: GothamBold, sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  padding: 30 0 5 0;
-  color: #1C344C;
-}
-
-h3{
-  text-align: center;
-  font-family: Capetown, serif;
-  font-size: 26px;
-  line-height: 24px;
-  padding: 0 0 20px 30px;
-  color: #F27360;
-}
-
-p{
-  font-size: 12px;
-  line-height: 14px;
-  font-family: GothamBook, sans-serif;
+  position: relative;
 }
 
 .bottom_images{
@@ -192,11 +232,12 @@ p{
 .about_main{
   max-width: 900px;
   margin: 0 auto;
+  margin-left: 100px;
 }
 
 .about_toptext{
   display: inline-block;
-  width: 275px;
+  width: 300px;
   background: white;
   padding: 20px 20px 20px 100px;
   position: absolute;
@@ -205,7 +246,7 @@ p{
 
 .about_middletext{
   display: inline-block;
-  width: 275px;
+  width: 300px;
   background: white;
   padding: 20px 100px 20px 20px;
   position: absolute;
@@ -215,11 +256,11 @@ p{
 
 .about_bottomtext{
   display: inline-block;
-  width: 275px;
+  width: 300px;
   background: white;
   padding: 20px 20px 20px 100px;
   position: absolute;
-  margin: 60px 0 30px -100px;
+  margin: 90px 0 30px -100px;
   }
 
 .about_image {
@@ -227,6 +268,7 @@ position:relative;
   padding-top: 40px;
   max-width: 40%;
   margin: auto;
+  margin-top: 30px;
   padding: 0 25px;
   width: 100%;
   z-index: 50;
@@ -251,13 +293,13 @@ position:relative;
 *=========================================================*/
 .gallery{
   position: relative;
-  margin: 30px 100px;
+  margin: 30px 30px 30px 80px;
 }
 
 .container {
   display: inline-block;
   position: relative;
-  margin: 15px 100px 20px;
+  margin: 20px;
   max-width: 900px;
 }
 
@@ -269,56 +311,36 @@ position:relative;
   margin: 20px;
 }
 
-.overlay1,
-.overlay2,
-.overlay3,
-.overlay4,
-.overlay5,
-.overlay6,
-.overlay7,
-.overlay8 {
+.overlay1 {
   position: absolute;
-  top: 125px;
+  top: 100px;
   bottom: 0;
-  left: 20px;
-  right: 20px;
-  height: 30%;
-  width: 88%;
+  height: 65px;
+  width: 300px;
   opacity: 0;
   transition: .5s ease;
   background-color: #1C344C;
-
 }
 
-.container:hover .overlay1,
-.container:hover .overlay2,
-.container:hover .overlay3,
-.container:hover .overlay4,
-.container:hover .overlay5,
-.container:hover .overlay6,
-.container:hover .overlay7,
-.container:hover .overlay8 {
+.container:hover .overlay1 {
   opacity: 1;
 }
 
-.text1,
-.text2,
-.text3,
-.text4,
-.text5,
-.text6,
-.text7,
-.text8 {
+.text1{
   color: #e5d8f0;
-  font-family: 'Antic Didone', serif;
-  font-size: 20px;
+  font-family: 'GothamBook', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
   position: absolute;
-  top: 50%;
+  padding: 10px;
+  top: 33px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
+  width: 300px;
+  height: 60px;
 }
 
 
@@ -335,11 +357,12 @@ h1{
   text-align: center;
 }
 
-.container {
+.registration_container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   color: #1c344c;
+  line-height: 14px;
 }
 
 .contact-form {
@@ -358,12 +381,19 @@ h1{
 
 .label_input_wrap {
   display: block;
+  line-height: 14px;
+  margin-top: 20px;
+}
+.registration_question {
+  margin-top: 20px;
 }
 
 label {
   font-weight: bold;
 }
-
+.h3_fontchange {
+  text-align: left;
+}
 input, textarea {
   padding: 5px 10px;
   border-radius: 3px;
@@ -374,4 +404,5 @@ input, textarea {
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
+  line-height: 12px;
 }
